@@ -9,5 +9,7 @@ router.get('/', function(req, res, next) {
 
 // mine
 router.get('/other', photos.list)
+router.get('/upload', photos.form);
+router.post('/upload', photos.submit(router.get('images')));
 
 module.exports = router;

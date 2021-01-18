@@ -11,10 +11,10 @@
   <p>Aplikacja Express do pracy ze zdjęciami</p>
   <div id="photos">
     <% photos.forEach((photo) => { %>
-
+      <!-- <% console.log(photo) %> -->
       <div class="photo">
         <h2><%=photo.name%></h2>
-        <img src="<%=photo.path%>" />
+        <img src='/photos/<%=photo.path%>'/>
       </div>
 
     <% }) %>
